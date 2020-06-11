@@ -39,7 +39,7 @@
   align-self: center;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -47,3 +47,39 @@
   height: 32px;
   z-index: 1;
 }
+
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  position: absolute;
+  left: 64px;
+  font-size: 102px;
+  font-weight: bold;
+}
+  
+.header__subtitle {
+  width: 388px;
+  line-height: 25px
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  cursor: pointer;
+}
+    
