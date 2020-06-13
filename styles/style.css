@@ -305,6 +305,7 @@
   margin: 0 auto;
   background-color: #1f1f1f;
   border: 1px solid red;
+  color: white;
 }
 
 .footer__columns {
@@ -321,6 +322,7 @@
   flex-direction: column;
   position: relative;
   flex-basis: 711px;
+  border: 1px solid red;
 }
 
 .footer__author {
@@ -331,7 +333,6 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  color: white;
   border: 1px solid red;
 }
 
@@ -356,37 +357,36 @@
 
 .footer__column-heading {
   display: flex;
-  margin: 0;
+  margin: 0px 0px 20px;
   border: 1px solid red;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer__column_links {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin: 20px 0px 16px;
+  justify-content: center;
+  line-height: 30px;
+  font-size: 18px;
+  margin-bottom: 16px;
   border: 1px solid red;
-}
+ }
 
-.footer__column_links_main {
+ .footer__column_links_text {
   display: flex;
+  flex-direction: row;
   margin: 0;
   border: 1px solid red;
-}
-
-.footer__column_links_conception {
-  display: flex;
-  margin: 0;
-  border: 1px solid red;
-}
-
-.footer__column_links_mentors {
-  display: flex;
-  margin: 0;
-  border: 1px solid red;
-}
+  font-weight: normal;
+  color: white;
+  text-decoration: none;
+ }
 
 .footer__social-icon {
   display: flex;
-
+  align-self: center;
+  margin-right: 10px;
+  border: 1px solid red;
 }
