@@ -311,19 +311,19 @@
   margin: 60px auto 40px;
 }
 
-.footer__column_content-copyright {
+.footer__column_content_copyright {
   display: flex;
   flex-direction: column;
   position: relative;
   flex-basis: 711px;
 }
 
-.footer__column_content-info {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
 }
 
-.footer__column_content-social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
 }
