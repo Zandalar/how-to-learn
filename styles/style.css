@@ -8,12 +8,12 @@
 /* HEADER */
 
 .logo {
-  position: absolute;
+  width: 183px;
   z-index: 2;
 }
 
 .logo_place_header {
-  width: 183px;
+  position: absolute;
   height: 32px;
   top: 30px;
   left: 64px;
@@ -182,7 +182,7 @@
 .feynman {
   min-height: 790px;
   position: relative;
-  background-image: url(/images/feynman.png);
+  background-image: url(../images/feynman.png);
   background-position: left bottom;
   background-repeat: no-repeat;
   background-size: 867px 637px;
@@ -191,7 +191,8 @@
 }
 
 .feynman__title {
-  width: 648px;
+  max-width: 648px;
+  width: 100%;
   text-align: center;
   line-height: 1.15;
   margin: 0px auto 70px;
@@ -202,7 +203,7 @@
 .feynman__subtitle {
   text-align: center;
   line-height: 51px;
-  font-size: 36;
+  font-size: 36px;
   font-weight: normal;
 }
 
@@ -228,10 +229,6 @@
   flex-direction: column;
   position: relative;
   margin: 0 auto;
-  background-image: url(/images/kaufman-triangle.svg);
-  background-size: 877px;
-  background-position: top 0px right -210px;
-  background-repeat: no-repeat;
   background-color: #1f1f1f;
   overflow: hidden;
 }
@@ -264,7 +261,14 @@
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: 877px;
+  display: block;
   position: absolute;
+  width: 877px;
+  height: 877px;
+  top: 0;
+  right: -210px;
 }
 
 .table__heading_theme_dark {
@@ -279,7 +283,6 @@
 
 .footer {
   display: flex;
-  position: relative;
   min-height: 350px;
   margin: 0 auto;
   background-color: #1f1f1f;
@@ -287,20 +290,12 @@
 }
 
 .logo_place_footer {
-  top: 0;
-  left: 0;
-  width: 183px;
   height: 35px;
 }
 
 .footer__author {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: 18px 0;
+  margin: 18px 0px;
   line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .footer__columns {
@@ -311,45 +306,47 @@
   margin: 60px auto 40px;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
 }
 
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
+  align-self: flex-start;
+  line-height: 30px;
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+  align-self: flex-start;
+  line-height: 30px;
 }
 
 .footer__column-heading {
-  margin: 0px 0px 20px;
-  line-height: 30px;
-  font-size: 18px;
+  margin: 0;
   font-weight: bold;
 }
 
 .footer__column-links {
-  line-height: 30px;
-  font-size: 18px;
-  margin-bottom: 16px;
+  margin: 20px 0px 16px;
   list-style-type: none;
   padding: 0;
-}
-
- .footer__links-text {
-  display: flex;
-  font-weight: normal;
   color: white;
   text-decoration: none;
 }
 
 .footer__social-icon {
   margin-right: 10px;
+  vertical-align: middle;
 }
+
+/* Немного оптимизировал код, удалил лишнее, в футере убрал дополнительный класс(вводил сам, думал без него никак)*/
+/* Исправил пару ошибок, работало, но было не совсем по брифу */
+/* Со ссылками тоже должно быть норм, проверил в 3-х браузерах :) */
+/* Прогнал через валидатор, вроде ошибок нет */
