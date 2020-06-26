@@ -5,3 +5,8 @@
   color: white;
   text-decoration: none;
 }
+
+a.footer__column-links:hover {
+  opacity: .4;
+  transition: opacity .2s linear;
+}
